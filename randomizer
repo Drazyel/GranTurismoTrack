@@ -1,0 +1,29 @@
+import random
+
+Tracklist = ["Autopolis (w)" ,"Autopolis Shortcut (w)","Circuit de la Sarthe (w)","Circuit de la Sarthe No Chicane (w)","Spa-Francorchamps (w)","Dragon Trail Gardens (w)","Dragon Trail Gardens Reverse (w)","Fuji Speedway Short Course (w)","Fuji Speedway (w)",
+"High Speed Ring (w)","High Speed Ring Reverse (w)","Nurburing - Nordschleife (w)","Nurburing - 24h (w)","Nurburing - Grand Prix (w)","Red Bull Ring (w)","Red Bull Ring Short Track (w)","Suzuka (w)","Suzuka East Course (w)","Tokyo Expressway - Central Clockwise (w)","Tokyo Expressway - South Clockwise (w)",
+"Tokyo Expressway - East Clockwise (w)","Tokyo Expressway - South Counterclockwise (w)","Tokyo Expressway - East Counterclockwise (w)","Tokyo Expressway - Central Counterclockwise (w)","Tsukuba Circuit (w)","Autodromo de Interlagos","Daytona Tri-Oval","Daytona Road Course","Special Stage Route X","Northern ISle Speedway",
+"Broad Bean Raceway","Broad Bean Reverse","Dragon Trail Seaside","Dragon Trail Seaside Reverse","Blue Moon Bay Full course","Blue Moon Bay Full Reverse","Blue Moon Bay Infield A","Blue Moon Bay Infield B","Blue Moon Bay Infield A Reverse",
+"Blue Moon Bay Infield B Reverse","Autodrome Lago Maggiore Full Course","Autodrome Lago Maggiore Full Course Reverse","Autodrome Lago Maggiore Centre","Autodrome Lago Maggiore Centre Reverse","Autodrome Lago Maggiore East End","Autodrome Lago Maggiore East End Reverse",
+"Autodrome Lago Maggiore West End","Autodrome Lago Maggiore West End Reverse","Autodrome Lago Maggiore East","Autodrome Lago Maggiore East Reverse","Autodrome Lago Maggiore West","Autodrome Lago Maggiore West Reverse","Deep Forest Raceway",
+"Deep Forest Raceway Reverse","Trial Mountain","Trial Mountain Reverse","WeatherTech Raceway Laguna Seca","Kyoto Driving Park - Yamagiwa","Kyoto Driving Park - Yamagiwa Reverse","Kyoto Driving Park - Miyabi","Kyoto Driving Park - Yamagiwa + Miyabi Reverse","Kyoto Driving Park - Yamagiwa + Miyabi",
+"Alsace Village","Alsace Village Reverse","Alsace Village Test Course","Alsace Village Test Course Reverse","Sardegna A","Sardegna A Reverse","Sardegna B","Sardegna B Reverse","Sardegna C","Sardegna C Reverse",
+"Willow Springs - Streets of Willow","Willow Springs - Streets of Willow Reverse","Willow Springs - Big WIllow","Willow Springs - Horse Thief Mile","Willow Springs - Horse Thief Reverse","Watkins Glen - Long Course","Watkins Glen - Short Course",
+"Monza Full Course","Monza No Chicane","Barcelona - Catalunya Grand Prix","Barcelona - Catalunya No Chicane","Barcelona - Catalunya National","Brands Hatch Grand Prix","Brands Hatch Indy Circuit","Circuit de Sainte-Croix - A","Circuit de Sainte-Croix - A Reverse"
+"Circuit de Sainte-Croix - B","Circuit de Sainte-Croix - B Reverse","Circuit de Sainte-Croix - C","Circuit de Sainte-Croix - C Reverse","Goodwood","Mount Panorama"]
+
+selection = random.choice(Tracklist)
+night= random.randint(1,100)
+
+print(selection)
+
+if "(w)" in selection:
+  rain= random.randint(1,100)
+  if rain > 15 :
+    print("No Rain")
+  else : print("It will rain")
+
+night= random.randint(1,100)
+if night > 20:
+  print("Day Race")  
+else: print("Night Race")
